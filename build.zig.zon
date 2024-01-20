@@ -1,0 +1,20 @@
+.{
+    .name = "libxdp",
+    .version = "1.4.1-0",
+    .dependencies = .{
+        .upstream = .{
+            .url = "https://github.com/xdp-project/xdp-tools/archive/refs/tags/v1.4.1.tar.gz",
+            .hash = "122033e38163aad727e0be2d8321a675e00b256d6fe2e286a404c85aa9800c4e7c93",
+        },
+        .libbpf = .{
+            .url = "https://github.com/tw4452852/libbpf_zig/archive/refs/tags/1.3.0-1.tar.gz",
+            .hash = "12208a5f09eb6d53e6231b390731f0719016fbc5f357252b70c2b254ac63eadbe718",
+        },
+    },
+    .paths = .{
+        "LICENSE",
+        "README.md",
+        "build.zig",
+        "build.zig.zon",
+    },
+}
